@@ -1,17 +1,157 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Security Awareness Test</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Georgia Tech Security Awareness Training</title>
+
     <style>
+        :root {
+            --gt-gold: #B3A369;
+            --gt-navy: #003057;
+            --gt-light: #F5F5F5;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: Arial, sans-serif;
+            font-family: Arial, Helvetica, sans-serif;
+            background: var(--gt-light);
+            color: #222;
+        }
+
+        .header {
+            background: var(--gt-navy);
+            color: white;
+            padding: 20px 40px;
+            border-bottom: 6px solid var(--gt-gold);
+        }
+
+        .header h1 {
+            font-size: 1.8rem;
+        }
+
+        .main {
+            max-width: 900px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        .card {
+            background: white;
+            border-top: 8px solid var(--gt-gold);
+            border-radius: 8px;
+            padding: 50px;
             text-align: center;
-            margin-top: 100px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.12);
+        }
+
+        .icon {
+            font-size: 5rem;
+            margin-bottom: 20px;
+        }
+
+        .gotcha {
+            color: #c62828;
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .message {
+            font-size: 1.25rem;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+
+        .tips {
+            text-align: left;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .tips h3 {
+            color: var(--gt-navy);
+            margin-bottom: 15px;
+        }
+
+        .tips ul {
+            padding-left: 25px;
+        }
+
+        .tips li {
+            margin-bottom: 10px;
+        }
+
+        .footer {
+            text-align: center;
+            color: #666;
+            margin-top: 40px;
+            padding-bottom: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 14px 28px;
+            background: var(--gt-navy);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            opacity: 0.9;
         }
     </style>
 </head>
 <body>
-    <h1>Gotcha!</h1>
-    <p>This was a security awareness exercise.</p>
+
+    <header class="header">
+        <h1>Georgia Tech Security Awareness Program</h1>
+    </header>
+
+    <main class="main">
+        <div class="card">
+
+            <div class="icon">⚠️</div>
+
+            <h2 class="gotcha">Gotcha!</h2>
+
+            <p class="message">
+                This was a security awareness training exercise.
+            </p>
+
+            <p class="message">
+                Please be more conscious of suspicious URLs, unexpected requests
+                for personal information, and messages that create a false sense
+                of urgency.
+            </p>
+
+            <div class="tips">
+                <h3>Before clicking a link, remember to:</h3>
+
+                <ul>
+                    <li>Inspect the URL carefully.</li>
+                    <li>Verify the sender and source.</li>
+                    <li>Watch for misspellings and look-alike domains.</li>
+                    <li>Be cautious when asked for credentials or financial information.</li>
+                    <li>Report suspicious messages to the Georgia Tech security team.</li>
+                </ul>
+            </div>
+
+            <a href="#" class="button">I Understand</a>
+
+        </div>
+
+        <div class="footer">
+            Georgia Tech Security Awareness Training
+        </div>
+    </main>
+
 </body>
 </html>
